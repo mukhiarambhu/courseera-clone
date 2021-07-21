@@ -246,3 +246,89 @@ div > p {
 div > img {
   margin-left: 25px;
 }
+#boxtemplete4 {
+  align-items: center;
+  background: rgb(235, 243, 255) none repeat scroll 0% 0%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 489px;
+}
+
+#boxtemp41 img {
+  max-width: 606px;
+  max-height: 553px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#boxtemp42 h2 {
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 44px;
+  line-height: 52px;
+  margin-bottom: 20px;
+  margin-top: 45px;
+}
+
+#boxtemp42 {
+  -moz-box-pack: center;
+  -moz-box-direction: normal;
+  -moz-box-orient: vertical;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  justify-content: center;
+}
+
+.box421 {
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0px 0px 32px;
+  max-width: 463px;
+  width: 100%;
+}
+
+#boxtemplete4 span {
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 30px;
+}
+
+#btntemp41 {
+  background: rgb(0, 86, 210) none repeat scroll 0% 0%;
+  border: medium none;
+  border-radius: 4px;
+  display: inline-block;
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+
+  margin-top: 30px;
+}
+
+#btntemp42 {
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+  border-radius: 4px;
+  display: inline-block;
+  font-family: Source Sans Pro, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 12px 32px;
+  text-align: center;
+
+  text-decoration: none;
+  border: 2px solid rgb(0, 86, 210);
+  color: rgb(0, 86, 210);
+  margin-left: 20px;
+  margin-top: 30px;
+}
