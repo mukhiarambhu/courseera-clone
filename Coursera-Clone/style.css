@@ -58,13 +58,24 @@ div > #coursera-img {
   
 }
 .select:hover .sub-explore ul li{
-  width: 200px;
+  width: 220px;
+  
   text-align: left;
   list-style: none;
   
 
   
 } 
+.select:hover .sub-explore ul:first-of-type li:first-child{
+  height: 50px;
+  margin-top: 10px;
+  
+}
+.select:hover .sub-explore ul li:nth-child(6){
+  height: 50px;
+  margin-top: 10px;
+  
+}
 
 #search_box {
   height: 40px;
