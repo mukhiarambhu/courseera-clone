@@ -8,6 +8,8 @@ let courseData = [
       numStudent: 161690,
       numINMin: "4.3M",
       level: "Mixed",
+      lang:"English",
+      courseduration:"1-3 Months",
     },
     {
       img: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/51/51d7604aba11e7ae3525d9720463e7/Shiller_FinancialMarkets_New.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25",
@@ -18,6 +20,8 @@ let courseData = [
       numStudent: 184999,
       numINMin: "990k",
       level: "Beginner",
+      lang:"English",
+      courseduration:"1-3 Months",
     },
     {
       img: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/bb/62e6a0120b11e6bc32c330496bd91a/Career-Development.jpg?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25",
@@ -28,6 +32,8 @@ let courseData = [
       numStudent: 10171,
       numINMin: "1.4M",
       level: "Mixed",
+      lang:"Spanish",
+      courseduration:"1-3 Months",
     },
     {
       img: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/b4/339da416653830d015f5a179f864e1/square_logo_large.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25",
@@ -38,6 +44,8 @@ let courseData = [
       numStudent: 118594,
       numINMin: "700k",
       level: "Intermediate",
+      lang:"Spanish",
+      courseduration:"1-4 weeks",
     },
     {
       img: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/19/554c8d156a477690c6f0b81733c11c/intoduction-to-statistics_XFDS112.jpg?auto=format%2Ccompress&dpr=1&w=150&h=150&q=25&fit=fill&bg=FFF",
@@ -48,6 +56,8 @@ let courseData = [
       numStudent: 207,
       numINMin: "25k",
       level: "Beginner",
+      lang:"Italian",
+      courseduration:"1-4 weeks",
     },
     {
       img: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/35/01fcc0dd0011e6bfe6e9e792d574eb/Logo.png?auto=format%2Ccompress&dpr=1&w=150&h=150&q=25&fit=fill&bg=FFF",
@@ -58,6 +68,8 @@ let courseData = [
       numStudent: 11385,
       numINMin: "370k",
       level: "Mixed",
+      lang:"Italian",
+      courseduration:"1-4 weeks",
     },
     {
       img: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera/topics/medicalneuro/large-icon.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25",
@@ -68,6 +80,8 @@ let courseData = [
       numStudent: 2229,
       numINMin: "240k",
       level: "Advanced",
+      lang:"German",
+      courseduration:"Less than two hours",
     },
     {
       img: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/29/77d8a09b4c11e8b7a12503c978f9c1/penicillin.jpg?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25",
@@ -78,6 +92,8 @@ let courseData = [
       numStudent: 156,
       numINMin: "23k",
       level: "Advanced",
+      lang:"German",
+      courseduration:"Less than two hours",
     },
     {
       img: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/40/8dbf10ac1911e68f5119007c0cf554/GettyImages-547015901-Thumbnail.jpg?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25",
@@ -88,6 +104,8 @@ let courseData = [
       numStudent: 2977,
       numINMin: "230k",
       level: "Intermediate",
+      lang:"English",
+      courseduration:"Less than two hours",
     },
     {
       img: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/51/85e280c26e11e8849d270c2d8122ff/SportsMarketing2018_Tile.jpg?auto=format%2Ccompress&dpr=1&w=150&h=150&q=25&fit=fill&bg=FFF",
@@ -98,6 +116,8 @@ let courseData = [
       numStudent: 829,
       numINMin: "23k",
       level: "Beginner",
+      lang:"German",
+      courseduration:"Less than two hours",
     },
   ];
 
@@ -172,10 +192,44 @@ function showData(d) {
 
       data.forEach(function (el) {
         if (selectValue.value == el.level) {
+          console.log(el);
           arr.push(el);
         }
       });
 
       showData(arr);
     }
+};
+
+ function addlang(e) {
+  let data = JSON.parse(localStorage.getItem("CourseData"));
+  if (e.key == "Enter") {
+    let arr = [];
+
+    let selectValue = document.getElementById("selectFilter1");
+
+    data.forEach(function (el) {
+      if (selectValue.value == el.lang) {
+        console.log(el);
+        arr.push(el);
+      }
+    });
+    showData(arr);
+  }
+};
+function adddur(e) {
+  let data = JSON.parse(localStorage.getItem("CourseData"));
+  if (e.key == "Enter") {
+    let arr = [];
+
+    let selectValue = document.getElementById("selectFilter3");
+
+    data.forEach(function (el) {
+      if (selectValue.value == el.courseduration) {
+        console.log(el);
+        arr.push(el);
+      }
+    });
+    showData(arr);
+  }
 };

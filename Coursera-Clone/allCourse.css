@@ -19,7 +19,7 @@ div > #coursera-img {
   margin-right: 10px;
   margin-left: 5px;
 }
-#select {
+.select {
   margin-left: 20px;
   height: 40px;
   width: 90px;
@@ -31,20 +31,49 @@ div > #coursera-img {
   font-weight: bold;
   justify-content: center;
   font-size: medium;
+  position: relative;
 }
-#select:hover {
+.select:hover {
   background-color: white;
   color: #0056d2;
 }
-#select option {
-  padding: 10px;
-  font-family: "Source Sans Pro", Arial, sans-serif;
-  -webkit-box-align: center;
+
+.sub-explore{
+  display: none;
+  margin-top: 10px;
+
 }
-#select option:hover {
-  height: 400px;
-  width: 200px;
-  background-color: transparent;
+.select:hover .sub-explore{
+  display: block;
+  position: absolute;
+  background-color: gainsboro;
+  margin-top: 15px;
+  margin-left: 5px;
+
+}
+.select:hover .sub-explore ul{
+  display: block;
+  margin: 10px;
+  
+}
+.select:hover .sub-explore ul li{
+  width: 220px;
+  
+  text-align: left;
+  list-style: none;
+  
+
+  
+} 
+.select:hover .sub-explore ul:first-of-type li:first-child{
+  height: 50px;
+  margin-top: 10px;
+  
+}
+.select:hover .sub-explore ul li:nth-child(6){
+  height: 50px;
+  margin-top: 10px;
+  
 }
 #search_box {
   height: 40px;

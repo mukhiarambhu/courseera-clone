@@ -16,9 +16,37 @@
         alt=""
       />
 
-      <select name="Explore" id="select">
-        <option value="">Explore</option>
-      </select>
+      <button  class="select">Explore
+        <div class="sub-explore" >
+            
+            <ul>
+                <li><a href="#">Goals</a></li>
+                <li><a href="#">Take a free course</a></li>
+                <li><a href="#">Earn a Degree   </a></li>
+                <li><a href="#">Earn a Certificate   </a></li>
+                <li><a href="#">Launch your Career  </a></li>
+           
+                <li ><a href="#">Subjects</a></li>
+                <li><a href="#">Data Science</a></li>
+                <li><a href="#">Computer Science</a></li>
+                <li><a href="#">Informatiom Technology</a></li>
+                <li><a href="#">Language Training</a></li>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Personal Developement</a></li>
+                <li><a href="#">Physical science and Engineering</a></li>
+                <li><a href="#">Social Science</a></li>
+                <li><a href="#">Arts and Humanities</a></li>
+                <li><a href="#">Maths and logic</a></li>
+                
+            </ul>
+          
+                      
+                      
+    
+        </div>
+
+
+    </button>
       <form id="myform">
         <input
           type="text"
@@ -56,9 +84,12 @@
       <h>Filter By</h>
       <div id="boxes">
         <div class="box" id="box1">
-          <select id="selectFilter">
+          <select id="selectFilter1" onkeypress="addlang(event)">
             <option>Language</option>
-            <option></option>
+            <option>English</option>
+            <option>Spanish</option>
+            <option>Italian</option>
+            <option>German</option>
           </select>
         </div>
         <div class="box" id="box2">
@@ -71,9 +102,11 @@
           </select>
         </div>
         <div class="box" id="box3">
-          <select id="selectFilter">
+          <select id="selectFilter3" onkeypress="adddur(event)">
             <option>Duration</option>
-            <option></option>
+            <option>1-3 Months</option>
+            <option>1-4 weeks</option>
+            <option>Less than two hours</option>
           </select>
         </div>
         <div class="box" id="box4">
@@ -97,7 +130,8 @@
         <div class="box" id="box7">
           <select id="selectFilter">
             <option>Learning Product</option>
-            <option></option>
+            <option>Guided project</option>
+            <option>Courses</option>
           </select>
         </div>
       </div>
