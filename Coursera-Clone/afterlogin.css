@@ -149,6 +149,7 @@ li button:hover {
   display: flex;
   width: 1500px;
   height: 200px;
+  margin-top: 65px;
 }
 
 #div11 h1 {
@@ -254,6 +255,36 @@ li button:hover {
   float: left;
   margin-left: 40px;
 }
+#navcontainer1 {
+  background-color: white;
+  margin-bottom: 0px;
+}
+
+#boxdiccont1 {
+  margin-left: 120px;
+  justify-content: left;
+  display: flex;
+  background-color: white;
+}
+
+#boxdiccont1 p {
+  margin-left: 120px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#boxdiccont1 p:hover {
+  border-bottom: 20px solid rgb(0, 98, 228);
+  border-width: 3px;
+  border-spacing: 15px;
+}
+
+#boxdiccont1 a {
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
 #container1 {
   background-color: rgb(245, 247, 248);
   margin-bottom: 0px;
@@ -300,6 +331,7 @@ li button:hover {
   float: right;
   font-weight: 600;
   font-family: "Source Sans Pro", Arial, sans-serif;
+  margin-right: 10px;
 }
 
 .text1 {
