@@ -32,6 +32,7 @@ div > #coursera-img {
   font-weight: bold;
   justify-content: center;
   font-size: medium;
+  border-radius: 3px;
   position: relative;
 }
 .select:hover {

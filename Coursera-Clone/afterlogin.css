@@ -1,10 +1,15 @@
+body {
+  margin: 0px;
+  background-color: white;
+}
 #navbar {
   width: 100%;
-  height: 45px;
+  height: 60px;
   background-color: #ffffff;
   display: flex;
-  position: -webkit-sticky;
-  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  position: fixed;
+  top: 0;
 }
 
 div > #coursera-img {
@@ -20,7 +25,7 @@ div > #coursera-img {
 }
 .select {
   margin-left: 20px;
-  height: 35px;
+  height: 40px;
   width: 90px;
   background-color: #0056d2;
   color: white;
@@ -53,11 +58,19 @@ div > #coursera-img {
   margin: 10px;
 }
 .select:hover .sub-explore ul li {
-  width: 200px;
+  width: 220px;
+
   text-align: left;
   list-style: none;
 }
-
+.select:hover .sub-explore ul:first-of-type li:first-child {
+  height: 50px;
+  margin-top: 10px;
+}
+.select:hover .sub-explore ul li:nth-child(6) {
+  height: 50px;
+  margin-top: 10px;
+}
 #search_box {
   height: 40px;
   width: 330px;
@@ -126,7 +139,10 @@ li button:hover {
 #login {
   color: #0056d2;
 }
-
+#profileLogo {
+  width: 70px;
+  height: 40.767px;
+}
 #div1 {
   background-color: rgb(215, 238, 247);
   display: flex;
@@ -237,102 +253,94 @@ li button:hover {
   float: left;
   margin-left: 40px;
 }
-
-#span1 {
+#container1 {
+  background-color: rgb(245, 247, 248);
+  margin-bottom: 0px;
+  margin-top: -30px;
+}
+#container1 h2 {
   margin-left: 150px;
-  display: flex;
-}
-#span1 a {
-  margin-left: 100px;
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 600;
+  color: rgb(31, 31, 31);
+  padding-top: 80px;
+}
+#box12 {
+  background-color: rgb(245, 247, 248);
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.course {
+  margin: 25px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 15px;
+}
+.largerimage img {
+  width: 264px;
+  height: 132px;
+}
+.smallimage img {
+  margin-top: -35px;
+  width: 55px;
+  height: 55px;
+  padding-left: 20px;
 }
 
-#span1 a:hover {
-  text-underline-position: below;
-  color: blue;
+.smallimage button {
+  float: right;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 2px solidrgb(255, 224, 87);
+  background-color: rgb(255, 224, 87);
+  border-radius: 10px;
+  font-size: 12px;
+  float: right;
+  font-weight: 600;
+  font-family: "Source Sans Pro", Arial, sans-serif;
 }
 
-#div3 {
-  background-color: rgb(245, 247, 248);
+.text1 {
+  margin-top: 10px;
 }
-#headdiv3 {
-  font-size: 1.75rem;
-  line-height: 2.25rem;
+.text1 a {
+  color: rgb(0, 86, 210);
+  text-decoration: none;
   font-family: "Source Sans Pro", Arial, sans-serif;
-  font-weight: 600;
-  padding-top: 50px;
-  padding-left: 200px;
+  margin-right: 20px;
 }
-#boxdiv31 {
-  display: flex;
+.text1 a:hover {
+  text-decoration: underline;
 }
-.img {
-  display: flex;
-}
-#div3boxes {
-  margin-left: 200px;
-  margin-right: 200px;
-}
-#boxdiv31 img {
-  width: 300px;
-  height: 400.783px;
-  margin: 10px;
-}
-#div4 {
-  background-color: rgb(245, 247, 248);
-  margin-top: 0px;
-}
-#headdiv4 {
-  font-size: 1.75rem;
-  line-height: 2.25rem;
+.text1 p {
+  color: rgb(102, 102, 102);
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-family: "Source Sans Pro", Arial, sans-serif;
-  font-weight: 600;
-  padding-top: 50px;
-  padding-left: 200px;
+  font-weight: 400;
+  margin-left: 20px;
 }
-#boxdiv41 {
-  display: flex;
+.text2 {
+  margin-top: 60px;
 }
-.img {
-  display: flex;
-}
-#div4boxes {
-  margin-left: 200px;
-  margin-right: 200px;
-}
-#boxdiv41 img {
-  width: 300px;
-  height: 400.783px;
-  margin: 10px;
-}
-#div5 {
-  background-color: rgb(245, 247, 248);
-  margin-top: 0px;
-}
-#headdiv5 {
-  font-size: 1.75rem;
-  line-height: 2.25rem;
+.text2 h4 {
+  color: rgb(102, 102, 102);
   font-family: "Source Sans Pro", Arial, sans-serif;
-  font-weight: 600;
-  padding-top: 50px;
-  padding-left: 200px;
+  font-weight: 700;
+  margin-left: 20px;
 }
-#boxdiv51 {
-  display: flex;
+.text2 i {
+  float: right;
+  margin-top: -40px;
+  font-size: 25px;
+  margin-right: 20px;
+  color: rgb(0, 86, 210);
 }
-.img {
-  display: flex;
+.course:hover {
+  transform: scale(1.02);
 }
-#div5boxes {
-  margin-left: 200px;
-  margin-right: 200px;
-}
-#boxdiv51 img {
-  width: 300px;
-  height: 400.783px;
-  margin: 10px;
-}
+
 #div6 {
   margin-top: 40px;
   background-color: white;
@@ -340,7 +348,7 @@ li button:hover {
 }
 #div61 {
   display: flex;
-  margin-left: 210px;
+  margin-left: 170px;
   border: 1px solid whitesmoke;
 }
 #div612 img {
@@ -348,7 +356,7 @@ li button:hover {
 }
 #div62 {
   display: flex;
-  margin-left: 40px;
+  margin-left: 80px;
   border: 1px solid whitesmoke;
 }
 #div622 img {
@@ -369,6 +377,7 @@ li button:hover {
 #div6 button :hover {
   background-color: blue;
 }
+
 #footer {
   /* width:100%; */
   height: 500px;
