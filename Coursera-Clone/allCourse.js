@@ -127,6 +127,10 @@ function showData(d) {
       let name = document.createElement("h3");
       name.style.fontSize = "25px";
       name.style.marginTop = "4px";
+
+      name.addEventListener("click", function () {
+        courseDetailsPage();
+      });
       name.setAttribute("class", "courseName");
 
       let cours = document.createElement("p");
@@ -179,3 +183,9 @@ function showData(d) {
       showData(arr);
     }
 };
+
+function courseDetailsPage() {
+  window.location.href = "Course-detail.html";
+}
+
+

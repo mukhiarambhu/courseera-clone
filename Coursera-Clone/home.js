@@ -72,9 +72,11 @@
                 let p = userAllData[i].password;
 
                 if(u==username && p==password){
-                    console.log("loged in");
+                    
                     document.querySelector(".bg-model_login").style.display = "none";
                     document.body.style.background = "none";
+
+                    window.location.href = "afterloginPage.html";
                     return;
                 }
         }
