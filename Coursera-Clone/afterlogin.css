@@ -142,6 +142,7 @@ li button:hover {
 #profileLogo {
   width: 70px;
   height: 40.767px;
+  border-radius: 35px;
 }
 #div1 {
   background-color: rgb(215, 238, 247);
@@ -309,6 +310,7 @@ li button:hover {
   text-decoration: none;
   font-family: "Source Sans Pro", Arial, sans-serif;
   margin-right: 20px;
+  font-size: 20px;
 }
 .text1 a:hover {
   text-decoration: underline;
