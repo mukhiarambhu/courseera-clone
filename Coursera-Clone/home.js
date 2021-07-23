@@ -23,16 +23,14 @@
         const password = userData.password.value;
         let userAllData;
 
-       if(name!="" && email!="" && password!=""){
+      
            userAllData = {
                name,
                email,
                password
            };
             
-        }else{
-            alert("Fill All Details");
-        }
+       
         
         let arr;
         arr = localStorage.getItem("signUpData");
@@ -65,6 +63,8 @@
             const username = form.email.value;
             const password = form.password.value;
 
+            console.log(username, password);
+
             const userAllData = JSON.parse(localStorage.getItem("signUpData"));
 
             for(let i=0;i<userAllData.length;i++){
@@ -72,11 +72,11 @@
                 let p = userAllData[i].password;
 
                 if(u==username && p==password){
-                    
+                    console.log("**");
                     document.querySelector(".bg-model_login").style.display = "none";
                     document.body.style.background = "none";
 
-                    window.location.href = "afterloginPage.html";
+                    window.location.href = "afterlogin.html";
                     return;
                 }
         }
