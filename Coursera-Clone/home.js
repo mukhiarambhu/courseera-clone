@@ -55,7 +55,13 @@
       
         }
         
-     
+     function productsearch(){
+         const search =document.getElementById("search_box").value;
+         console.log(search);
+         if(search==="product"){
+             window.location.href="allCourse.html";
+         }
+     }
 
         function userLogin(e) {
             e.preventDefault();
