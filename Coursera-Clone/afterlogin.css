@@ -297,7 +297,7 @@ li button:hover {
   margin-top: -30px;
 }
 #container1 h2 {
-  margin-left: 150px;
+  margin-left: 240px;
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 600;
   color: rgb(31, 31, 31);
@@ -311,12 +311,12 @@ li button:hover {
   align-items: center;
 }
 .course {
-  margin: 25px;
+  margin: 10px;
   background-color: rgb(255, 255, 255);
   margin-top: 15px;
 }
 .largerimage img {
-  width: 264px;
+  width: 244px;
   height: 132px;
 }
 .smallimage img {
