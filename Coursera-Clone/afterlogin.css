@@ -145,6 +145,11 @@ li button:hover {
   height: 40.767px;
   border-radius: 35px;
 }
+#profilename {
+  font-size: 20px;
+  margin-left: 90px;
+  margin-top: -40px;
+}
 #div1 {
   background-color: rgb(215, 238, 247);
   display: flex;
