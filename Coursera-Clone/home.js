@@ -21,6 +21,9 @@
         const name = userData.name.value;
         const email = userData.email.value;
         const password = userData.password.value;
+        if(name==""||email==""||password==""){
+            alert("Fill all the details")
+        }else{
         let userAllData;
 
       
@@ -52,7 +55,7 @@
             document.querySelector(".bg-model_login").style.display = "none";
             document.body.style.background = "none";
         });
-      
+    }
         }
         
      function productsearch(){
