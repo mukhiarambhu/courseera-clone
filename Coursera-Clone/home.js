@@ -54,7 +54,9 @@
         });
       
         }
-   
+        
+     
+
         function userLogin(e) {
             e.preventDefault();
 
@@ -70,7 +72,7 @@
             for(let i=0;i<userAllData.length;i++){
                 let u = userAllData[i].email;
                 let p = userAllData[i].password;
-
+    
                 if(u==username && p==password){
                     console.log("**");
                     document.querySelector(".bg-model_login").style.display = "none";

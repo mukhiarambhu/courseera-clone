@@ -35,6 +35,7 @@ select {
   font-weight: bold;
   justify-content: center;
   font-size: medium;
+  border-radius: 3px;
 }
 select:hover {
   background-color: white;
