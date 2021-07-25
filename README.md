@@ -1,7 +1,7 @@
 # courseera-clone
 
 <p>
-<img  src="https://camo.githubusercontent.com/9d07c04bdd98c662d5df9d4e1cc1de8446ffeaebca330feb161f1fb8e1188204/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6176615363726970742d4637444631453f7374796c653d666f722d7468652d6261646765266c6f676f3d6a617661736372697074266c6f676f436f6c6f723d626c61636b"/>
+
 
 
 ### TECH USED
@@ -15,3 +15,10 @@
 - Google Fonts
 - Font Awesome
  
+  ## SCREENSHOTS
+  
+  ![alt text](https://cdn.hashnode.com/res/hashnode/image/upload/v1627122460488/xSxCDngOy.jpeg?auto=compress,format&format=webp)
+  ![alt text](https://cdn.hashnode.com/res/hashnode/image/upload/v1627122931638/KmK0azs0-.jpeg?auto=compress,format&format=webp)
+  ![alt text](https://cdn.hashnode.com/res/hashnode/image/upload/v1627123272599/dntKvC061.jpeg?auto=compress,format&format=webp)
+  ![alt text](https://cdn.hashnode.com/res/hashnode/image/upload/v1627123652353/QPn0z23wS.jpeg?auto=compress,format&format=webp)
+  ![alt text](https://cdn.hashnode.com/res/hashnode/image/upload/v1627124031902/1pmDBtcAYa.jpeg?auto=compress,format&format=webp)
