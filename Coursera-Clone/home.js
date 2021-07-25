@@ -8,7 +8,7 @@
          document.body.style.background = "none";
     });
 
-    
+      //function for getting signup data and storing in local storage
     function signUpData(e){
         
         e.preventDefault();
@@ -65,7 +65,7 @@
              window.location.href="allCourse.html";
          }
      }
-
+    // function fetching data from local storage and comparing with incomming data from login form
         function userLogin(e) {
             e.preventDefault();
 

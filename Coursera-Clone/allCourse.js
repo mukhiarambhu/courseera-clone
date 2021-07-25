@@ -1,3 +1,4 @@
+//hardcoding data to localstorage
 let courseData = [
     {
       img: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera/topics/ml/large-icon.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25",
@@ -124,7 +125,7 @@ let courseData = [
   if (localStorage.getItem("CourseData") == null) {
     localStorage.setItem("CourseData", JSON.stringify(courseData));
   }
-
+//function for fetching data from local storage and appending to body
 function showData(d) {
  
     let data = d;
@@ -186,7 +187,7 @@ function showData(d) {
   }
 
   showData(JSON.parse(localStorage.getItem("CourseData")));
-
+//fuction for filtering based on level
   function addFilter(e) {
     let data = JSON.parse(localStorage.getItem("CourseData"));
     if (e.key == "Enter") {
@@ -209,7 +210,7 @@ function courseDetailsPage() {
   window.location.href = "Course-detail.html";
 }
 
-
+//fuction for filtering language of course
  function addlang(e) {
   let data = JSON.parse(localStorage.getItem("CourseData"));
   if (e.key == "Enter") {
@@ -226,6 +227,7 @@ function courseDetailsPage() {
     showData(arr);
   }
 };
+//filter function for course duration
 function adddur(e) {
   let data = JSON.parse(localStorage.getItem("CourseData"));
   if (e.key == "Enter") {
